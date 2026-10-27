@@ -5,7 +5,10 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "transform": { "scheme": "https", "host": "watch.typetype.video" }
+                "transform": {
+                    "scheme": "https",
+                    "host": "watch.typetype.video"
+                }
             }
         },
         "condition": {
@@ -19,7 +22,10 @@
         "action": {
             "type": "redirect",
             "redirect": {
-                "transform": { "scheme": "https", "host": "watch.typetype.video" }
+                "transform": {
+                    "scheme": "https",
+                    "host": "watch.typetype.video"
+                }
             }
         },
         "condition": {
@@ -62,4 +68,3 @@
         }
     }
 ]
- 
