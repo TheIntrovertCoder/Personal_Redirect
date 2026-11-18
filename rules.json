@@ -13,7 +13,7 @@
         },
         "condition": {
             "urlFilter": "www.youtube.com",
-            "resourceTypes": ["main_frame"]
+            "resourceTypes": ["main_frame", "sub_frame"]
         }
     },
     {
@@ -30,7 +30,7 @@
         },
         "condition": {
             "urlFilter": "www.youtube-nocookie.com",
-            "resourceTypes": ["sub_frame"]
+            "resourceTypes": ["main_frame", "sub_frame"]
         }
     },
     {
@@ -47,7 +47,7 @@
         },
         "condition": {
             "urlFilter": "www.reddit.com",
-            "resourceTypes": ["main_frame"]
+            "resourceTypes": ["main_frame", "sub_frame"]
         }
     },
     {
@@ -64,7 +64,26 @@
         },
         "condition": {
             "urlFilter": "*.google.*",
-            "resourceTypes": ["main_frame"]
+            "excludedRequestDomains": ["messages.google.com", "chromewebstore.google.com", "accounts.google.com"],
+            "excludedInitiatorDomains": ["chromewebstore.google.com"],
+            "resourceTypes": ["main_frame", "sub_frame"]
+        }
+    },
+    {
+        "id": 5,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "transform": {
+                    "scheme": "https",
+                    "host": "fonts.bunny.net"
+                }
+            }
+        },
+        "condition": {
+            "urlFilter": "fonts.google.com",
+            "resourceTypes": ["main_frame", "sub_frame"]
         }
     }
 ]
