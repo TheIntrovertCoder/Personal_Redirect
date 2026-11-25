@@ -41,7 +41,7 @@
             "redirect": {
                 "transform": {
                     "scheme": "https",
-                    "host": "redlib.nadeko.net"
+                    "host": "redlib--unneeded1142.replit.app"
                 }
             }
         },
